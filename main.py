@@ -45,7 +45,7 @@ class Netflixer:
                 if red > 255:
                     red = 255
         print(center(faded))
-        print(center(f'{Fore.LIGHTYELLOW_EX}\ngithub.com/Plasmonix Version 3.0\n{Fore.RESET}'))
+        print(center(f'{Fore.LIGHTYELLOW_EX}\nTelegram -> @QuitBRO Version 1.0\n{Fore.RESET}'))
     
     def cpmCounter(self):
         while True:
@@ -57,7 +57,7 @@ class Netflixer:
     def updateTitle(self):
         while True:
             elapsed = time.strftime('%H:%M:%S', time.gmtime(time.time() - self.start))
-            ctypes.windll.kernel32.SetConsoleTitleW(f'[NETFLIXER v3] - Hits: {self.hits} | Bad: {self.bad} | Retries: {self.retries} | CPM: {self.cpm} | Threads: {threading.active_count() - 2} | Time elapsed: {elapsed}')
+            ctypes.windll.kernel32.SetConsoleTitleW(f'[Netflix CheckerV1] - Hit: {self.hits} | Bad: {self.bad} | Retries: {self.retries} | CPM: {self.cpm} | Threads: {threading.active_count() - 2} | Time elapsed: {elapsed}')
             time.sleep(0.4)
 
     def getProxies(self):
